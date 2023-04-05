@@ -31,4 +31,5 @@ A página possui duas abas, uma de login e outra de signup. Para fazer login, pr
 Para se inscrever, clique na aba "Signup" e preencha os campos do formulário com as informações solicitadas, como nome completo, endereço de e-mail e senha. Certifique-se de preencher todas as informações corretamente e clique no botão "Signup" para enviar o formulário. Um e-mail de confirmação será enviado para o endereço fornecido.
 
 
-link: https://j0a0f3l1p3.github.io/pagina-de-login/
+
+ [![Acessar Projeto](https://img.shields.io/badge/Acessar%20Projeto-página%20de%20login-brightgreen)](https://j0a0f3l1p3.github.io/pagina-de-login)
