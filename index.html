@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,39 +12,65 @@
 <body>
 
   <div class="container">
-    <nav class="navTabs" >
-      <img src=https://picsum.photos/100 alt="foto de perfil">
+    <img src=https://picsum.photos/200 alt="foto de perfil">
+    <nav class="navTabs">
       <ul>
+
+
+
+
         <li>
           <input type="radio" id="aba1" class="input" name="abas" checked>
           <label for="aba1" class="label">Log-in</label>
           <div class="content">
             <div class="login-box">
-              <form>
+              <form method="post" action="process.php" name="myForm">
                 <div class="user-box">
-                  <input type="text" name="" id="username" autocomplete="off" required>
-                  <label for="username" class="labForm">Username</label>
+                  <input type="text" class="textArea" name="" id="username" autocomplete="off" title="Não ouse passar daqui sem completar os campos" required oninvalid="this.setCustomValidity('Tá cego?')" oninput="setCustomValidity('')">
+                  <label for="username" class="labForm">Nome</label>
                 </div>
                 <div class="user-box">
-                  <input type="password" name="" id="password" required>
-                  <label for="password" class="labForm">Password</label>
+                  <input type="password" class="textArea" name="" id="password" required title="Não ouse passar daqui sem completar os campos" oninvalid="this.setCustomValidity('Tá cego?')" oninput="setCustomValidity('')">
+                  <label for="password" class="labForm" >Senha</label>
                 </div>
-                  <a href="#">SEND</a>
+                <button type="submit" href="#">LOG-IN</button>
+                  <a href="secretPage.html" class="forgPass">Esqueceu a senha?</a>
               </form>
             </div>
           </div>
         </li>
+
+
+
+
         <li>
-          <input type="radio" id="aba2" class="input" name="abas">
+          <input type="radio" id="aba2" class="input" name="abas" value="opcao2">
           <label for="aba2" class="label">Sign-up</label>
-          <div class="content"> Sessão de registro em andamento </div>
+          <div class="content">
+            <div class="login-box">
+              <form method="post" action="process.php" name="myForm">
+                <div class="user-box">
+                  <input type="email" class="textArea" name="" id="email" autocomplete="off" title="Não ouse passar daqui sem completar os campos" required oninvalid="this.setCustomValidity('Tá cego?')" oninput="setCustomValidity('')">
+                  <label for="email" class="labForm">Email</label>
+                </div>
+                <div class="user-box">
+                  <input type="text" class="textArea" name="" id="username" autocomplete="off" title="Não ouse passar daqui sem completar os campos" required oninvalid="this.setCustomValidity('Tá cego?')" oninput="setCustomValidity('')">
+                  <label for="username" class="labForm">Nome</label>
+                </div>
+                <div class="user-box">
+                  <input type="password" class="textArea" name="" id="password" required title="Não ouse passar daqui sem completar os campos" oninvalid="this.setCustomValidity('Tá cego?')" oninput="setCustomValidity('')">
+                  <label for="password" class="labForm" >Senha</label>
+                </div>
+                <button type="submit" href="perfilPage.html">SIGN-UP</button>
+              </form>
+            </div>
+          </div>
         </li>
       </ul>
     </nav>
   </div>
-  
+
   <script src="script.js"></script>
 
 </body>
-
 </html>
