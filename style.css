@@ -2,11 +2,18 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  user-select: none;
+  height: auto;
+  width: auto;
 }
 
 body {
   background-color: #BBB4BF;
+  /* background-image: url("https://picsum.photos/200?blur=5");
+  background-size: cover;
+  background-position: center; */
   height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,22 +23,32 @@ body {
   background-color: #435C73;
   height: 280px;
   width: 250px;
+  padding: 10px;
   border-radius: 20px;
 	position: relative;
   box-shadow: 20px 20px 60px #575757;
 }
 
 img {
-  margin-top: -50px;
-  margin-left: 75px;
+  position: absolute;
+  z-index: 999;
+  height: 110px;
+  width: 110px;
+  /* margin: -50px 70px -10px 70px; */
+  margin: -75px 70px -10px 70px;
   border-radius: 100px;
   border: 3px solid #6588A6;
-  box-shadow: 0px 5px 10px;
+  background: linear-gradient(145deg, #6588A6, #435C73);
+  box-shadow:  4px 4px 8px #293846,
+             -4px -4px 8px #3b5a75;
 }
 
 .navTabs ul {
+  margin-top: 20px;
   display: flex;
   list-style: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .input {
@@ -45,7 +62,6 @@ img {
   display: block;
   color: #6588A6;
   text-align: center;
-  user-select: none;
   border-bottom: 2px solid #6588A6;
 	cursor: pointer;
   transition: 0.3s;
@@ -67,6 +83,7 @@ img {
 	left: 0;
   color: #6588A6;
   text-align: center;
+  /* background-color: rgba(29, 38, 46, 0.5); */
 }
 
 .input:checked ~ .content {
@@ -84,7 +101,7 @@ img {
   padding: 15px 0px 0px;
   font-size: 15px;
   color: #6588A6;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   border: none;
   border-bottom: 1px solid #6588A6;
   outline: none;
@@ -99,17 +116,18 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 15px 0;
+  padding: 10px 0;
+  /* padding: 15px 0; */
   font-size: 16px;
   color: #6588A6;
   pointer-events: none;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 input:focus ~ .labForm,
 input:valid ~ .labForm {
-  top: -15px;
-  left: 0;
+  top: -10px;
+  /* top: -15px; */
   color: #6588A6;
   font-size: 12px;
 }
@@ -120,15 +138,30 @@ form {
   align-items: center;
 }
 
-.login-box form a {
-  border-radius: 10px;
+.login-box form button {
   text-align: center;
   text-decoration: none;
   color: #435C73;
+  text-shadow: inset 1px 1px 0px #000;
   background-color: #6588A6;
   padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #6588A6, #435C73);
+  box-shadow:  4px 4px 8px #293846,
+             -4px -4px 8px #3b5a75;
+
 }
 
-.login-box form a:hover {
-  background-color: #98bbd9;
+.login-box form button:active {
+  background: linear-gradient(145deg, #6588A6, #435C73);
+  box-shadow: inset 4px 4px 8px #435C73,
+            inset -4px -4px 8px #6588A6;
+}
+
+.forgPass {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #6588A6;
 }
