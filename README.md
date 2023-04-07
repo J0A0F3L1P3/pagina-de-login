@@ -1,4 +1,4 @@
-# pagina-de-login [![Acessar Projeto](https://img.shields.io/badge/Acessar%20Projeto-página%20de%20login-brightgreen)](https://j0a0f3l1p3.github.io/pagina-de-login)
+# pagina-de-login [![Acessar Projeto](https://img.shields.io/badge/Acessar%20Projeto-página%20de%20login-blue)](https://j0a0f3l1p3.github.io/pagina-de-login)
 
 **Página de Login e Signup com JavaScript**
 <br><br>
@@ -13,7 +13,7 @@ Este é um projeto que consiste em duas abas, uma de login e outra de signup, cr
 - Mensagem de erro exibida se os campos estiverem em branco ou preenchidos incorretamente.<br>
 - Redirecionamento para a página de boas-vindas após o login bem-sucedido.<br>
 - Formulário de signup com campos para informações pessoais e de contato.<br>
-<br><br>
+<br>
 
 **Tecnologias Utilizadas**
 <br><br>
